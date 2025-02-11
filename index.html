@@ -4,29 +4,65 @@
         <meta charset="utf-8">
         <meta name="veiwport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Connor Hall">
-        <meta name="description" content="My new cool project">
-        <meta name="keywords" content="web developmetn, html, css, javascript, winnipeg, Canada">
+        <meta name="description" content="My portfolio">
+        <meta name="keywords" content="web development, html, css, winnipeg, Canada">
         <title>Portfolio</title>
         <link rel="icon" href="./assets/img/favicon.png" type="image/png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mrspecht/cdn/reset.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">    
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap">
         <link rel="stylesheet" href="./assets/css/main.css">
     </head>
-    <header>
-
-    </header>
     <body>
-        <section class="about">
+        
+        <header class="container flex justify-between">
+            <h1>Connor Hall</h1>
+            <nav class="flex">
+                <ul>
+                    <li><a href="#about">About me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        </section>
+        <div class="hero container flex align gap">
+            <div class="hero-column hero-content">
+                <h2>Placeholder text</h2>
+                <p>smaller placeholder text</p>
+            </div>
+            <div class="hero-column hero-pic">
 
-        <section class="contact">
+            </div>
+        </div>
+
+        <main class="container">
+            <section id="about" class="about">
+
+            </section>
+
+            <section id ="experience" class="experience">
+                <div class="flex gap wrap">
+                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
+                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
+                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
+                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
+                </div>
+            </section>
             
-        </section>
+            <section id="contact" class="contact align">
+                <h2>Want to get in touch?</h2>
+                <p>Heres where to find me</p>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </main>
+        <footer>
+            
+        </footer>
     </body>
-    <footer>
-
-    </footer>
 </html>
