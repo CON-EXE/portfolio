@@ -32,6 +32,14 @@
     gap: 20px;
 }
 
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -40,6 +48,25 @@ body {
     font-family: "Open Sans", Arial, sans-serif;
     background-color: #111;
     color: #fff;
+}
+
+h2 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+span {
+    color: #e30022;
+}
+
+.hero-banner {
+    height: 100dvh;
+    background: #333 url() center center / cover no-repeat;
+    overflow: hidden;
 }
 
 header {
@@ -68,6 +95,27 @@ header {
     }
 }
 
+.hero-content {
+    height: calc(100dvh - 70px - 70px);
+
+    & > div {
+        text-align: center;
+        color: #fff;
+        text-wrap: balance;
+
+        h2 {
+            line-height: 1;
+            font-size: 100px;
+            font-weight: 900;
+        }
+
+        p {
+            font-size: 30px;
+            font-weight: 500;
+        }
+    }
+}
+
 nav {
     height: 56px;
 }
@@ -93,11 +141,13 @@ nav ul li {
     }
 }
 
-.hero {
-    height: 100dvh;
+section {
+    margin-top: 150px;
 }
 
-.hero-column {
+
+
+.about-column {
     width: 100%;
     height: 400px;
     border-radius: 5px;
@@ -105,19 +155,33 @@ nav ul li {
     box-shadow: 1px 1px 2px rgb(0 0 0 / 10%);
 }
 
-.hero-content {
+.about-content {
     width: calc(60% - 10px);
 }
 
-.hero-pic {
+.about-pic {
     width: calc(40% - 10px);
 }
 
 .column {
-    height: 200px;
-    border-radius: 5px;
-    background-color: #fff;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #333;
     box-shadow: 2px 2px 4px rgb(0 0 0 / 10%);
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.java { background: url(../img/java.png) center center / cover no-repeat; }
+.html { background: url(../img/html5.svg) center center / cover no-repeat; }
+.css { background: url(../img/css3.svg) center center / cover no-repeat; }
+.javascript { background: url(../img/javascript.svg) center center / cover no-repeat; }
+
+.java, .html, .css, .javascript {
+    margin-bottom: 30px;
 }
 
 .col-lg-3 {
@@ -125,9 +189,42 @@ nav ul li {
     max-width: calc(25% - 15px);
 }
 
+.contact {
+    margin: 40px 0 100px 0;
+    gap: 40px;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+a {
+    height: 100px;
+    width: 100px;
+    border: solid 1px #e30022;
+    border-radius: 10px;
+    color: #e30022;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+a:hover {
+    transform: scale(1.5);
+}
+
+i {
+    font-size: 50px;
+}
+
 footer {
     height: 100px;
-    background-color: #020202;
+    background-color: #222;
+    line-height: 100px;
+    text-align: center;
+    p {
+        font-size: 20px;
+        color: #888;
+    }
 }
 
 @media (max-width: 768px) {

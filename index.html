@@ -18,51 +18,94 @@
     </head>
     <body>
         
-        <header class="container flex justify-between">
-            <h1>Connor Hall</h1>
-            <nav class="flex">
-                <ul>
-                    <li><a href="#about">About me</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="hero container flex align gap">
-            <div class="hero-column hero-content">
-                <h2>Placeholder text</h2>
-                <p>smaller placeholder text</p>
-            </div>
-            <div class="hero-column hero-pic">
-
+        <div class="hero-banner">
+            <div class="container">
+                <header class="flex justify-between">
+                    <h1>Connor Hall</h1>
+                    <nav class="flex">
+                        <ul>
+                            <li><a href="#about">About me</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                            <li><a href="#contact">Contact me</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="overlay">
+                    <div class="hero-content flex grid-center">
+                        <div>
+                            <p class="left">Hey! I'm</p>
+                            <h2><span>Connor Hall</span></h2>
+                            <p class="right">I make shit work</p>
+                        </div>
+                    </div>
+                    <div class="hero-footer"></div>
+                </div>
             </div>
         </div>
 
+        <div class="hero container flex align gap">
+        </div>
+        
         <main class="container">
             <section id="about" class="about">
-
+                <div class="about-column about-content">
+                    
+                </div>
+                <div class="about-column about-pic">
+        
+                </div>
+                
             </section>
 
             <section id ="experience" class="experience">
+                <h2>My <span>Experience</span></h2>
                 <div class="flex gap wrap">
-                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
-                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
-                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
-                    <div class="column col-lg-3 col-md-6 col-xs-12"></div>
+                    <div class="column col-lg-3 col-md-6 col-xs-12 grid-center">
+                        <div><p>Java</p></div>
+                        <div class="logo java"></div>
+                    </div>
+                    <div class="column col-lg-3 col-md-6 col-xs-12 grid-center">
+                        <div><p>HTML</p></div>
+                        <div class="logo html"></div>
+                    </div>
+                    <div class="column col-lg-3 col-md-6 col-xs-12 grid-center">
+                        <div><p>CSS</p></div>
+                        <div class="logo css"></div>
+                    </div>
+                    <div class="column col-lg-3 col-md-6 col-xs-12 grid-center">
+                        <div>JavaScript</div>
+                        <div class="logo javascript"></div>
+                    </div>
                 </div>
             </section>
             
-            <section id="contact" class="contact align">
+            <section id="contact" class="align">
                 <h2>Want to get in touch?</h2>
-                <p>Heres where to find me</p>
-                <div></div>
-                <div></div>
-                <div></div>
+                <p>Heres where to find me:</p>
+                <div class="contact flex align justify-between">
+                    <div class=" grid-center">
+                        <a href="#">
+                            <p>Email</p>
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="grid-center">
+                        <a href="#">
+                            <p>GitHub</p>
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="grid-center">
+                        <a href="#">
+                            <p>Linkedin</p>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            
+            <p>&copy Connor Hall</p>
         </footer>
     </body>
 </html>
