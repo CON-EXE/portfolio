@@ -89,7 +89,7 @@ header {
     padding: 0 25px;
     border-radius: 50px;
     border: 1px solid rgb(202 0 30 / 10%);
-    background-color: #e30022;
+    background-color: rgba(51, 51, 51, 0.5);
     backdrop-filter: blur(20px) saturate(120%);
 
     h1, p {
@@ -111,7 +111,6 @@ header {
 
 .hero-content {
     height: calc(100dvh);
-    z-index: 1;
 
     & > div {
         text-align: center;
@@ -122,6 +121,7 @@ header {
             line-height: 1;
             font-size: 100px;
             font-weight: 900;
+            margin: 0;
         }
 
         p {
@@ -156,6 +156,20 @@ nav ul li {
     }
 }
 
+.arrow {
+    color: #e30022;
+    font-size: 30px;
+    position: absolute;
+    bottom: 25px;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 40%, 80%, 100% {transform: translateY(0); }
+    20% { transform: translateY(12px); }
+    60% { transform: translateY(12px); }
+}
+
 section {
     margin-top: 150px;
 }
@@ -164,12 +178,10 @@ section {
     width: 100%;
     height: 450px;
     border-radius: 10px;
-    background-color: #333;
 }
 
 .about-content {
     width: calc(60% - 10px);
-    padding: 20px;
 
     p {
         font-size: 20px;
@@ -178,17 +190,36 @@ section {
     p + p {
         margin-top: 20px;
     }
+
+    a {
+        text-decoration: none;
+        
+        :hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .about-pic {
     width: calc(40% - 10px);
     background: #333 url(../img/connor.jpg) center center / cover no-repeat;
+    border-radius: 10px;
+    padding: 50px;
 }
 
 .column {
     height: 250px;
     border-radius: 10px;
-    background-color: #333;
+    background-color: #30303099;
+    background: linear-gradient(to top, #30303050, #40404070);
+    box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 4%), 0 2px 4px rgb(0 0 0 / 10%);
+}
+
+.column-overlay {
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    
 }
 
 .logo {
@@ -211,40 +242,57 @@ section {
 }
 
 .contact {
-    margin: 40px 0 100px 0;
-    gap: 40px;
 
     p {
+        margin: 5px 0;
         font-size: 20px;
+    }
+
+    h2 {
+        margin-bottom: 0;
     }
 }
 
-.contact a {
-    height: 100px;
-    width: 100px;
-    border: solid 1px #e30022;
+.contact-icons {
+    gap: 30px;
+    margin: 40px;
+}
+
+.contact-icons a {
+    height: 75px;
+    width: 75px;
+    border: solid 1px #fd0026;
     border-radius: 10px;
-    color: #e30022;
+    color: #fd0026;
     text-decoration: none;
     transition: transform 0.2s;
 }
 
-.contact a:hover {
-    transform: scale(1.5);
+.contact-icons a:hover {
+    transform: scale(1.2);
 }
 
-.contact i {
-    font-size: 50px;
+.contact-icons i {
+    font-size: 40px;
+    line-height: 75px;
 }
 
-footer {
+.footer-overlay {
     height: 100px;
-    background-color: #222;
+    width: 100%;
+    background: linear-gradient(to top, #16232B, #111);
+}
+
+.footer-content {
+    height: 100px;
+    background-color: #16232B;
     line-height: 100px;
     text-align: center;
+
     p {
         font-size: 20px;
         color: #888;
+        bottom: 0;
     }
 }
 
