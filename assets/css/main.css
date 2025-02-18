@@ -182,7 +182,7 @@ section {
 
 .about-pic {
     width: calc(40% - 10px);
-    background: #333 url(../img/connor4.jpg) center center / cover no-repeat;
+    background: #333 url(../img/connor.jpg) center center / cover no-repeat;
 }
 
 .column {
